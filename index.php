@@ -36,7 +36,7 @@
                 <nav class="classy-navbar justify-content-between" id="dreamNav">
 
                     <!-- Logo -->
-                    <a class="nav-brand" href="index.php"><img src="img/Logo/Logo copy4.png" alt="logo"></a>
+                    <a class="nav-brand" href="index.php"><img src="img/Logo/logo.jpeg" alt="logo"></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
