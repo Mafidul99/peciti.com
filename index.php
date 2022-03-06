@@ -1,3 +1,5 @@
+<?php include('process-mail.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +8,7 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>PECITI-HOME || DIGITAL SERVICES </title>
+    <title>PECITI-HOME | DIGITAL SERVICES </title>
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favic copy.png">
 
@@ -15,6 +17,7 @@
 
     <!-- Responsive Stylesheet -->
     <link rel="stylesheet" href="css/responsive.css">
+    
 </head>
 
 <body class="light-version">
@@ -33,7 +36,7 @@
                 <nav class="classy-navbar justify-content-between" id="dreamNav">
 
                     <!-- Logo -->
-                    <a class="nav-brand" href="index.html"><img src="img/Logo/Logo copy4.png" alt="logo"></a>
+                    <a class="nav-brand" href="index.php"><img src="img/Logo/Logo copy4.png" alt="logo"></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -51,7 +54,7 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul id="nav">
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.php">Home</a></li>
                                 <li><a href="#">About Us</a></li>
                                 <li><a href="#">Services</a>
                                     <ul class="dropdown">
@@ -63,7 +66,7 @@
                             </ul>
 
                             <!-- Button -->
-                            <a href="" class="btn btn-danger btnlog" target="_blank">Log-in</a>
+                            <a href="#" class="btn btn-danger btnlog" target="_blank">Log-in</a>
                             <!--<a href="#" class="open-popup-link btn login-btn mr-im" target="_blank">Log-in</a>-->
                             <!--<a href="#signup-popup" class="open-signup-link btn login-btn">Signup </a>-->
                         </div>
@@ -434,15 +437,15 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-8">
                     <div class="contact_form">
-                        <form action="#" method="post" id="main_contact_form" novalidate>
+                        <form action="#" method="post">
                             <div class="row">
                                 <div class="col-12">
-                                    <div id="success_fail_info"></div>
+                                   
                                 </div>
 
                                 <div class="col-12 col-md-6">
                                     <div class="group wow fadeInUp" data-wow-delay="0.2s">
-                                        <input type="text" name="name" id="name7" required>
+                                        <input type="text" name="name"  required>
                                         <span class="highlight"></span>
                                         <span class="bar"></span>
                                         <label>Name</label>
@@ -450,7 +453,7 @@
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="group wow fadeInUp" data-wow-delay="0.3s">
-                                        <input type="text" name="email" id="email" required>
+                                        <input type="text" name="email"  required>
                                         <span class="highlight"></span>
                                         <span class="bar"></span>
                                         <label>Email</label>
@@ -458,7 +461,7 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="group wow fadeInUp" data-wow-delay="0.4s">
-                                        <input type="text" name="subject" id="subject" required>
+                                        <input type="text" name="subject" required>
                                         <span class="highlight"></span>
                                         <span class="bar"></span>
                                         <label>Subject</label>
@@ -466,7 +469,7 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="group wow fadeInUp" data-wow-delay="0.5s">
-                                        <textarea name="message" id="message" required></textarea>
+                                        <textarea name="message" required></textarea>
                                         <span class="highlight"></span>
                                         <span class="bar"></span>
                                         <label>Message</label>
@@ -595,8 +598,35 @@
 
     <script src="js/jquery.syotimer.min.js"></script>
 
+    <script src="js/sweetalert2@11.js"></script>
+
     <!-- script js -->
     <script src="js/script.js"></script>
+
+    <script>
+    if(window.history.replaceState){
+        window.history.replaceState(null, null, window.location.href);
+    }
+</script>
+<?php
+if(isset($_SESSION['status']) && $_SESSION['status'] !='')
+{
+    ?>
+        <script>            
+            Swal.fire({
+            position: 'top-end',
+            toast: true,
+            icon: '<?php echo $_SESSION['status_code']; ?>',            
+            //title: 'Thank you !',
+            text: "<?php echo $_SESSION['status']; ?>",
+            showConfirmButton: false,
+            timer: 7000
+            })
+        </script>        
+    <?php
+    unset($_SESSION['status']);
+}
+?>
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
@@ -613,6 +643,8 @@
         })();
     </script>
     <!--End of Tawk.to Script-->
+
+
 
 
 
