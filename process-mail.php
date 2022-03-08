@@ -32,7 +32,7 @@ try{
 
 	$mail->isHTML(true);
 	$mail->Subject = "Contact Us From Peciti";
-	$mail->Body = "<h3> Name : $name <br> Subject : $subject <br> Email ID : $email  <br> Message : $message</h3>";
+	$mail->Body = "<h3> Name : $name <br> Email ID : $email <br> Subject : $subject  <br> Message : $message</h3>";
 
 
 	$mail->send();

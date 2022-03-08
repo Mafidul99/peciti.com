@@ -73,7 +73,7 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-8">
                     <div class="contact_form">
-                        <form action="#" method="post">
+                        <form action="#" method="POST">
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <div class="group wow fadeInUp" data-wow-delay="0.2s">
@@ -137,13 +137,14 @@
     <script src="js/dzsparallaxer.js"></script>
     <!-- Active js -->
     <script src="js/script.js"></script>
-    <script src="js/sweetalert2@11.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script>
     if(window.history.replaceState){
         window.history.replaceState(null, null, window.location.href);
     }
     </script>
+    
     <?php
     if(isset($_SESSION['status']) && $_SESSION['status'] !='')
     {
@@ -157,7 +158,7 @@
                 text: "<?php echo $_SESSION['status']; ?>",
                 showConfirmButton: false,
                 timer: 7000
-                })
+                });                
             </script>        
         <?php
         unset($_SESSION['status']);
