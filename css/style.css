@@ -4579,3 +4579,32 @@ body.light-version {
     color: #fff !important;
     font-weight: 400;
 }
+
+.text-cont {
+    font-size: 22px;
+    text-align: center;
+    color: #281b87 !important;
+}
+
+.textpra {
+    color: #000 !important;
+    font-size: 15px;
+}
+
+.callcont {
+    font-size: 17px;
+    color: #281b87;
+    font-weight: 500;
+}
+
+.callcont:hover {
+    font-size: 17px;
+    color: red;
+    font-weight: 500;
+}
+
+.faicon {
+    font-size: 20px;
+    color: red;
+    font-weight: 500;
+}

@@ -47,10 +47,9 @@
             </div>
         </div>
     </div>
-    <!-- ##### Welcome Area End ##### -->
-
-    
+    <!-- ##### Welcome Area End ##### -->   
     <!-- ##### Contact Area Start ##### -->
+    
     <section class="contact_us_area" id="contact">
         <div class="container">
             <div class="row">
@@ -60,60 +59,135 @@
                         <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s">
                             <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                         </div>
-                        <h2 class="wow fadeInUp" data-wow-delay="0.3s">Contact With Us</h2>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.3s">Have You Any Query?</h2>
                     </div>
                 </div>
             </div>
+
+            <div class="container">
+            <div class="row">
+                <div class="col-md-8">                    
+                        <div class="contact_form">
+                            <form action="#" method="POST">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="group wow fadeInUp" data-wow-delay="0.2s">
+                                            <input type="text" name="name"  required>
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label>Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="group wow fadeInUp" data-wow-delay="0.3s">
+                                            <input type="text" name="email"  required>
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label>Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="group wow fadeInUp" data-wow-delay="0.4s">
+                                            <input type="text" name="subject" required>
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label>Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="group wow fadeInUp" data-wow-delay="0.5s">
+                                            <textarea name="message" required></textarea>
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label>Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.6s">
+                                        <button type="submit" class="btn dream-btn">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>                
+                <div class="col-md-4">                    
+                        <div class="contact_info mt-s fadeInUp" data-wow-delay="0.4s">
+                            <h5 class="text-cont">Make Your Business Online?</h5><hr>                           
+                            <p>Digital Marketing, App Development and other related services.</p>
+                            <a href="#signup-popup" class="open-signup-link btn login-btn">Get Quote </a>
+                        </div>
+                        <hr>
+                        <div class="contact_info mt-s fadeInUp" data-wow-delay="0.4s">
+                            <h5 class="text-cont">PECITI- DIGITAL SERVICES</h5>
+                            <hr>
+                            <p class="textpra"> 342, Pakdi Pakri, Ballia, Uttar Pradesh - 277124</p><hr>
+                            <ul>
+                                <li><i class="fa-solid fa-square-phone faicon"></i>
+                                <a class="callcont" href="#">+91 8447949268</a></li>                                
+                                <li> <i class="fa-solid fa-envelope faicon"></i>
+                                 <a class="callcont" href="mailto:support@peciti.com"> support@peciti.com</a></li>
+                            </ul>
+                        </div>
+                </div>
+                
+            </div>
+        </div>
             <!-- Contact Form -->
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8">
-                    <div class="contact_form">
-                        <form action="#" method="POST">
-                            <div class="row">
-                                <div class="col-12 col-md-6">
-                                    <div class="group wow fadeInUp" data-wow-delay="0.2s">
-                                        <input type="text" name="name"  required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="group wow fadeInUp" data-wow-delay="0.3s">
-                                        <input type="text" name="email"  required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="group wow fadeInUp" data-wow-delay="0.4s">
-                                        <input type="text" name="subject" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="group wow fadeInUp" data-wow-delay="0.5s">
-                                        <textarea name="message" required></textarea>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.6s">
-                                    <button type="submit" class="btn dream-btn">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </section>
     <!-- ##### Contact Area End ##### -->
-    
+    <div id="signup-popup" class="white-popup mfp-hide">
+        <div class="top-form-header">
+            <h4>Get Quote Form</h4>
+        </div>
+        <form action="#" method="post" id="main_Signup_form" novalidate="">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="group">
+                        <input type="text" name="name" id="name3" required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Name</label>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12">
+                    <div class="group">
+                        <input type="text" name="email" id="name4" required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Email</label>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12">
+                    <div class="group">
+                        <input type="text" name="phone" id="name5" required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Mobile</label>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12">
+                    <div class="group">
+                        <input type="text" name="service" id="name6" required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Services</label>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12">
+                    <div class="group">
+                    <textarea name="message" id="name6" required=""></textarea>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Message</label>
+                    </div>                    
+                </div>
+                <div class="col-12 col-sm-5 text-left ">
+                    <button type="button" class="btn dream-btn">Submit</button>
+                </div>                
+            </div>
+        </form>        
+    </div>
 
     <!-- ##### Footer Area Start ##### -->
     <?php include('page/footer.php') ?>
@@ -133,6 +207,7 @@
     <!-- Active js -->
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/6bc3d12848.js" crossorigin="anonymous"></script>
 
     <script>
     if(window.history.replaceState){

@@ -52,21 +52,21 @@
                 <!-- Content Info -->
                 <div class="contact_info_area d-sm-flex justify-content-between">
                     <div class="contact_info mt-s text-center fadeInUp" data-wow-delay="0.2s">
-                        <h5>NAVIGATE</h5>
-                        <a href="#">
-                            <p>Advertisers</p>
+                        <h5>QUICK LINKS</h5>
+                        <a href="index.php">
+                            <p>Home</p>
+                        </a>
+                        <a href="About-us.php">
+                            <p>About us</p>
                         </a>
                         <a href="#">
-                            <p>Developers</p>
+                            <p>Services</p>
                         </a>
-                        <a href="#">
-                            <p>Resources</p>
+                        <a href="contact-us.php">
+                            <p>Contact Us</p>
                         </a>
-                        <a href="#">
-                            <p>Company</p>
-                        </a>
-                        <a href="#">
-                            <p>Connect</p>
+                        <a  href="http://admin.peciti.com/" class="btn btn-success">
+                            <p>Login/Sinup</p>
                         </a>
                     </div>
                 </div>
