@@ -9,7 +9,7 @@
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favic copy.png">
     <!-- Title -->
-    <title>PECITI-CONTACT US | DIGITAL SERVICES </title>   
+    <title>PECITI-ABOUT US | DIGITAL SERVICES </title>   
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
