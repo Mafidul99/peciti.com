@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Responsive Stylesheet -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css">    
     
 </head>
 
@@ -29,164 +29,9 @@
     </div>
 
     <!-- ##### Header Area Start ##### -->
-    <header class="header-area wow fadeInDown" data-wow-delay="0.2s">
-        <div class="classy-nav-container breakpoint-off">
-            <div class="container">
-                <!-- Classy Menu -->
-                <nav class="classy-navbar justify-content-between" id="dreamNav">
-
-                    <!-- Logo -->
-                    <a class="nav-brand" href="index.php"><img src="img/Logo/logo.jpeg" alt="logo"></a>
-
-                    <!-- Navbar Toggler -->
-                    <div class="classy-navbar-toggler">
-                        <span class="navbarToggler"><span></span><span></span><span></span></span>
-                    </div>
-
-                    <!-- Menu -->
-                    <div class="classy-menu">
-
-                        <!-- close btn -->
-                        <div class="classycloseIcon">
-                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                        </div>
-
-                        <!-- Nav Start -->
-                        <div class="classynav">
-                            <ul id="nav">
-                                <li><a href="index.php">Home</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Services</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">Services-1</a></li>
-                                        <li><a href="#">Services-2</a></li>
-                                        <li><a href="#">Services-3</a></li>
-                                    </ul>
-                                    <li><a href="#">Contact</a></li>
-                            </ul>
-
-                            <!-- Button -->
-                            <a href="#" class="btn btn-danger btnlog" target="_blank">Log-in</a>
-                            <!--<a href="#" class="open-popup-link btn login-btn mr-im" target="_blank">Log-in</a>-->
-                            <!--<a href="#signup-popup" class="open-signup-link btn login-btn">Signup </a>-->
-                        </div>
-                        <!-- Nav End -->
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <?php include('page/header.php'); ?>
     <!-- ##### Header Area End ##### -->
-
-    <!-- Login popup form  -->
-
-    <!--<div id="test-popup" class="white-popup mfp-hide">
-        <div class="top-form-header">
-            <h4>Login Form</h4>
-        </div>
-        <form action="#" method="post" id="main_login_form" novalidate="">
-            <div class="row">
-
-                <div class="col-12 col-md-12">
-                    <div class="group">
-                        <input type="text" name="name" id="name0" required="">
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label>Email</label>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12">
-                    <div class="group">
-                        <input type="password" name="name" id="name1" required="">
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label>Password</label>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-5 text-left ">
-                    <button type="submit" class="btn dream-btn">Login</button>
-                </div>
-                <div class="col-12 col-sm-7 text-left">
-                    <p class="mb-0 mt-10">Don't have an account? <a href="#signup-popup">Sign up</a></p>
-                </div>
-            </div>
-        </form>
-
-        <div class="other-accounts text-center">
-            <p class="w-text">Login with other account</p>
-            <div class="footer-social-info">
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            </div>
-        </div>
-    </div>-->
-
-    <!-- signup popup form so: -->
-
-    <!--<div id="signup-popup" class="white-popup mfp-hide">
-        <div class="top-form-header">
-            <h4>Signup Form</h4>
-        </div>
-        <form action="#" method="post" id="main_Signup_form" novalidate="">
-            <div class="row">
-                <div class="col-12 col-md-12">
-                    <div class="group">
-                        <input type="text" name="name" id="name3" required="">
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label>Name</label>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12">
-                    <div class="group">
-                        <input type="text" name="name" id="name4" required="">
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label>Email</label>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12">
-                    <div class="group">
-                        <input type="password" name="name" id="name5" required="">
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label>Password</label>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12">
-                    <div class="group">
-                        <input type="password" name="name" id="name6" required="">
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label>Confirm Password</label>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-5 text-left ">
-                    <button type="submit" class="btn dream-btn">Login</button>
-                </div>
-                <div class="col-12 col-sm-7 text-left">
-                    <p class="mb-0 mt-10">Don't have an account? <a href="#test-popup">Sign up</a></p>
-                </div>
-            </div>
-        </form>
-
-        <div class="other-accounts text-center">
-            <p class="w-text">Login with other account</p>
-            <div class="footer-social-info">
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            </div>
-        </div>
-    </div>-->
-
+    
     <!-- ##### Welcome Area Start ##### -->
     <section class="welcome_area demo2 flex align-items-center">
 
@@ -296,8 +141,6 @@
     </section>
     <!-- ##### Our Services Area End ##### -->
 
-
-
     <!-- ##### About Us Area Start ##### -->
     <section class="about-us-area section-padding-0-100 clearfix" id="about">
         <div class="container">
@@ -318,7 +161,7 @@
                         </div>
                         <h4 class="wow fadeInUp" data-wow-delay="0.3s">PECITI-Digital</h4>
                         <p class="wow fadeInUp" data-wow-delay="0.4s">Founded in 2020, Pefast Digital is a PECITI start up company which works towards financial inclusion and has developed innovative products and services under its brand, Peindia. Enables 1. billion Indians to transact cash-less
-                            and paper-less while making payments or availing financials products & services.</p>
+                            and paper-less while making payments or availing financials products & services.</p>                        
                         <a class="btn dream-btn mt-30 wow fadeInUp" data-wow-delay="0.6s" href="#">Read More</a>
                     </div>
                 </div>
@@ -416,170 +259,10 @@
             </div>
         </section>
         <!-- ##### Our features Area End ##### -->
-    </div>
-
-    <!-- ##### Contact Area Start ##### -->
-    <section class="contact_us_area" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center">
-                        <!-- Dream Dots -->
-                        <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s">
-                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                        </div>
-                        <h2 class="wow fadeInUp" data-wow-delay="0.3s">Contact With Us</h2>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact Form -->
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8">
-                    <div class="contact_form">
-                        <form action="#" method="post">
-                            <div class="row">
-                                <div class="col-12">
-                                   
-                                </div>
-
-                                <div class="col-12 col-md-6">
-                                    <div class="group wow fadeInUp" data-wow-delay="0.2s">
-                                        <input type="text" name="name"  required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="group wow fadeInUp" data-wow-delay="0.3s">
-                                        <input type="text" name="email"  required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="group wow fadeInUp" data-wow-delay="0.4s">
-                                        <input type="text" name="subject" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="group wow fadeInUp" data-wow-delay="0.5s">
-                                        <textarea name="message" required></textarea>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.6s">
-                                    <button type="submit" class="btn dream-btn">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Contact Area End ##### -->
+    </div>   
 
     <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area bg-img">
-
-        <div class="footer-content-area spec">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-12 col-lg-4 col-md-6">
-                        <div class="footer-copywrite-info">
-                            <!-- Copywrite -->
-                            <div class="copywrite_text fadeInUp" data-wow-delay="0.2s">
-                                <div class="footer-logo">
-                                    <a href="#"><img src="img/Logo/footer-logo2.png" alt="logo"></a>
-                                </div>
-                                <p>PECITI Digital is a start up company which works towards financial inclusion and has developed innovative products and services under its brand, paper-less while making payments or availing financials products & services.
-                                </p>
-                            </div>
-                            <!-- Social Icon -->
-                            <div class="footer-social-info fadeInUp" data-wow-delay="0.4s">
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-3 col-md-6">
-                        <div class="contact_info_area d-sm-flex justify-content-between">
-                            <!-- Content Info -->
-                            <div class="contact_info mt-x text-center fadeInUp" data-wow-delay="0.3s">
-                                <h5>PRIVACY & TOS</h5>
-                                <a href="#">
-                                    <p>Advertiser Agreement</p>
-                                </a>
-                                <a href="#">
-                                    <p>Acceptable Use Policy</p>
-                                </a>
-                                <a href="#">
-                                    <p>Privacy Policy</p>
-                                </a>
-                                <a href="#">
-                                    <p>Technology Privacy</p>
-                                </a>
-                                <a href="#">
-                                    <p>Developer Agreement</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-2 col-md-6 ">
-                        <!-- Content Info -->
-                        <div class="contact_info_area d-sm-flex justify-content-between">
-                            <div class="contact_info mt-s text-center fadeInUp" data-wow-delay="0.2s">
-                                <h5>NAVIGATE</h5>
-                                <a href="#">
-                                    <p>Advertisers</p>
-                                </a>
-                                <a href="#">
-                                    <p>Developers</p>
-                                </a>
-                                <a href="#">
-                                    <p>Resources</p>
-                                </a>
-                                <a href="#">
-                                    <p>Company</p>
-                                </a>
-                                <a href="#">
-                                    <p>Connect</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-12 col-lg-3 col-md-6 ">
-                        <div class="contact_info_area d-sm-flex justify-content-between">
-                            <!-- Content Info -->
-                            <div class="contact_info mt-s text-center fadeInUp" data-wow-delay="0.4s">
-                                <h5>CONTACT US</h5>
-                                <p>342, Pakdi Pakri</p>
-                                <p>Ballia, Uttar Pradesh - 277124</p>
-                                <p>+91 8447949268</p>
-                                <p>support@peciti.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </footer>
+    <?php include('page/footer.php') ?>
     <!-- ##### Footer Area End ##### -->
 
     <!-- ########## All JS ########## -->
@@ -595,58 +278,10 @@
     <script src="js/app.html"></script>
     <!-- Parallax js -->
     <script src="js/dzsparallaxer.js"></script>
-
     <script src="js/jquery.syotimer.min.js"></script>
-
     <script src="js/sweetalert2@11.js"></script>
-
     <!-- script js -->
     <script src="js/script.js"></script>
-
-    <script>
-    if(window.history.replaceState){
-        window.history.replaceState(null, null, window.location.href);
-    }
-</script>
-<?php
-if(isset($_SESSION['status']) && $_SESSION['status'] !='')
-{
-    ?>
-        <script>            
-            Swal.fire({
-            position: 'top-end',
-            toast: true,
-            icon: '<?php echo $_SESSION['status_code']; ?>',            
-            //title: 'Thank you !',
-            text: "<?php echo $_SESSION['status']; ?>",
-            showConfirmButton: false,
-            timer: 7000
-            })
-        </script>        
-    <?php
-    unset($_SESSION['status']);
-}
-?>
-
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {},
-            Tawk_LoadStart = new Date();
-        (function() {
-            var s1 = document.createElement("script"),
-                s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/622460131ffac05b1d7d2c23/1ftf1ejus';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script>
-    <!--End of Tawk.to Script-->
-
-
-
-
 
 </body>
 

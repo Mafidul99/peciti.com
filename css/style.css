@@ -38,6 +38,7 @@
 ***/
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300&display=swap');
 
 /*** 
 
@@ -465,6 +466,11 @@ ol {
     padding-bottom: 100px;
 }
 
+.section-padding-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
 .section-before:before {
     content: '';
     position: absolute;
@@ -802,6 +808,25 @@ ol {
 
 /* ##### 2.0 Header Area CSS ##### */
 
+.nav-menu .menu .menu-link {
+    font-size: 16px;
+    color: #281b87 !important;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.menu .menu-link-item {
+    color: #000 !important;
+    font-size: 15px;
+}
+
+.menu .menu-link-item:hover {
+    color: #281b87 !important;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 400;
+}
+
 .header-area {
     position: fixed;
     z-index: 5000;
@@ -823,6 +848,7 @@ ol {
 
 .dark.classy-nav-container {
     background-color: #fff;
+    text-transform: inherit;
 }
 
 .classy-navbar {
@@ -3676,7 +3702,7 @@ textarea:required {
 .breadcumb-content {
     position: absolute !important;
     width: 100%;
-    height: 100%;
+    height: 70%;
     top: 0;
     left: 0;
     z-index: 10;
@@ -3687,7 +3713,7 @@ textarea:required {
 }
 
 .breadcumb--con {
-    padding-top: 90px;
+    padding-top: 40px;
 }
 
 .breadcrumb {

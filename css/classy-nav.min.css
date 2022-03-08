@@ -842,13 +842,13 @@ img {
 }
 
 .dark.classy-nav-container a {
-    color: #000;
+    color: #281b87;
 }
 
 .dark .classynav ul li.megamenu-item>a:after,
 .dark.classy-nav-container a:focus,
 .dark.classy-nav-container a:hover {
-    color: #000;
+    color: #281b87;
 }
 
 .dark .classynav>ul>li.has-down.active>.dd-arrow::after,
