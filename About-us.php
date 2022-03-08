@@ -1,13 +1,11 @@
 <?php include('process-mail.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
-<!-- Mirrored from zizone.netlify.app/contact-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 May 2021 17:22:42 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favic copy.png">
     <!-- Title -->
@@ -17,8 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Responsive Stylesheet -->
-    <link rel="stylesheet" href="css/responsive.css">
-    
+    <link rel="stylesheet" href="css/responsive.css">    
 
 </head>
 

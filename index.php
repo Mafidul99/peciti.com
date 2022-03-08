@@ -1,25 +1,18 @@
 <?php include('process-mail.php'); ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>PECITI-HOME | DIGITAL SERVICES </title>
-    <!-- Favicon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/core-img/favic copy.png">
-
+    <title>PECITI-HOME | DIGITAL SERVICES </title>
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-
     <!-- Responsive Stylesheet -->
-    <link rel="stylesheet" href="css/responsive.css">    
+    <link rel="stylesheet" href="css/responsive.css">   
     
 </head>
-
 <body class="light-version">
     <!-- Preloader -->
     <div id="preloader">
